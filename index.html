@@ -37,7 +37,11 @@
               </li>
             </ul>
             
-              <a class="btn nav-btn" type="submit" href="#footer-section">Spojit se s námi</a>
+            <div class="change-lan">
+              <a href="#" class="lan1 lan-active">EN</a>
+              <span>|</span>
+              <a href="#" class="lan2">CZ</a>
+            </div>
             
           </div>
         </div>
@@ -56,6 +60,35 @@
             </div>
         </div>
     </section>
+
+    <section class="banner-params">
+      <div class="container">
+
+        <div class="project-items-group row">
+          <div class="project-images-item-wrapper col-lg-4 col-6">
+            <div class="project-images-item project-images-item-selected">
+              <h5>4 min</h5>
+              <p>OC Letňany</p>
+            </div>
+          </div>
+          <div class="project-images-item-wrapper col-lg-4 col-6">
+            <div class="project-images-item project-images-item-selected">
+              <h5>110 000</h5>
+              <p>Kč včetně DPH</p>
+            </div>
+          </div>
+          <div class="project-images-item-wrapper col-lg-4 col-12">
+            <div class="project-images-item">
+              <h5>13</h5>
+              <p>Volných bytů</p>
+              <img src="assets/img/project-item.png" alt="project-item">
+            </div>
+          </div>    
+        </div>
+
+      </div>
+      </div>
+    </section>
     
     <section class="projects" id="section2">
       <div class="container">
@@ -69,23 +102,8 @@
             </p>
             <a href="#" data-bs-toggle="collapse" data-bs-target="#hiddenText">Více informací <img src="assets/img/link.svg" alt="link-icon"></a>
           </div>
-          <div class="col-lg-6 project-images" data-aos="fade-left" data-aos-duration="2000">
-            <div class="d-flex project-items-group">
-              <div class="project-images-item">
-                <h5>4 min</h5>
-                <p>OC Letňany</p>
-              </div>
-              <div class="project-images-item blue">
-                <h5>110 000</h5>
-                <p>Kč včetně DPH</p>
-              </div>
-            </div>
-            <div class="project-images-item">
-              <h5>13</h5>
-              <p>Volných bytů</p>
-              <img src="assets/img/project-item.png" alt="project-item">
-            </div>
-          </div>
+          <div class="col-lg-6 project-image-block" style="background: url(assets/img/project-item-img2.svg);" data-aos="fade-left" data-aos-duration="500"></div>
+            
         </div>
 
         <div class="row project-item project-item2">
@@ -116,13 +134,14 @@
         </div>
 
         <div class="row project-item project-item4">     
-          <div class="col-lg-6 project-image-block" data-aos="fade-right" data-aos-duration="500" style="background: url(assets/img/3_tupolevova.jpg);"></div>
-          <div class="col-lg-6 project-text" data-aos="fade-left" data-aos-duration="500">
-            <span>Užijte si pohodlné rozložení</span>
-            <h3>Uspořádání budovy</h3>
-            <img src="assets/img/flat-project.svg" alt="flat-project" class="flat-project-img">
-            <a href="#">Zobrazit rozložení <img src="assets/img/link.svg" alt="link-icon"></a>
-          </div>    
+          <div class="col-lg-6" data-aos="fade-right" data-aos-duration="500">
+            <div class="project-image-block" data-aos="fade-right" data-aos-duration="500" style="background: url(assets/img/vyber_podlazi.jpg);">
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-right" data-aos-duration="500">
+            <div class="project-image-block flat-project-image" data-aos="fade-right" data-aos-duration="500" style="background: url(assets/img/flat-project.svg);">
+            </div>
+          </div>   
         </div>
 
       </div>
@@ -130,11 +149,7 @@
 
     <section class="filters-bar" id="section3">
       <div class="container">
-        <div class="filters-bar-wrapper" data-aos="fade-up" data-aos-duration="500" style="background: url(assets/img/filters-bar.svg);">
-          <div class="filters-bar-title">
-            <h4>Hledejte v</h4>
-            <p>Česká Republika, Praha <img src="assets/img/arrow-low.svg" alt="arrow-low"></p>
-          </div>
+        <div class="filters-bar-wrapper" data-aos="fade-up" data-aos-duration="500">
           <div class="flats-filters" data-aos="fade-up" data-aos-duration="1000">
             <div class="flats-filter-item">
               <p>Cena</p>     
@@ -235,6 +250,7 @@
             <div class="list-item-buttons">
               <a href="#" class="btn list-send-btn"><img src="assets/img/mail-icon.svg" alt="mail-icon">Odeslat dotaz</a>
               <a href="#" class="btn list-block-btn"><img src="assets/img/block-icon.svg" alt="block-icon">Nezávazně rezervovat</a>
+              <a href="#" class="btn list-sell-btn">Sold</a>
             </div>
           </div>
           <div class="list-item-price">350 000 € </div>
@@ -265,6 +281,7 @@
             <div class="list-item-buttons">
               <a href="#" class="btn list-send-btn"><img src="assets/img/mail-icon.svg" alt="mail-icon">Odeslat dotaz</a>
               <a href="#" class="btn list-block-btn"><img src="assets/img/block-icon.svg" alt="block-icon">Nezávazně rezervovat</a>
+              <a href="#" class="btn list-reserved-btn">Reserved</a>
             </div>
           </div>
           <div class="list-item-price">350 000 € </div>
@@ -295,6 +312,7 @@
             <div class="list-item-buttons">
               <a href="#" class="btn list-send-btn"><img src="assets/img/mail-icon.svg" alt="mail-icon">Odeslat dotaz</a>
               <a href="#" class="btn list-block-btn"><img src="assets/img/block-icon.svg" alt="block-icon">Nezávazně rezervovat</a>
+              <a href="#" class="btn list-avaiable-btn">Avaiable</a>
             </div>
           </div>
           <div class="list-item-price">350 000 € </div>
