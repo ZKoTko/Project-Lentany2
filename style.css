@@ -758,6 +758,11 @@ input[type="range"]:active::-webkit-slider-thumb{
 }
 
 /*Form*/
+.under-form-text {
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    margin-top: 25px;
+}
 .form-section {
     margin-bottom: 65px;
 }
