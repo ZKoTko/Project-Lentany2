@@ -828,8 +828,9 @@ cursor: pointer;
     margin-bottom: 0;
 }
 form {
-    max-width: 725px;
     margin-top: 30px;
+    width: 100%;
+    padding-right: 35px;
 }
 form input {
     border-radius: 20px !important;
