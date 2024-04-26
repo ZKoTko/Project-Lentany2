@@ -184,6 +184,12 @@ body {
     border-radius: 20px;
     min-height: 535px;
 }
+.flat-project-image {
+    min-height: 320px;
+}
+.project-changer {
+    min-height: 320px;
+}
 .project-item2 .project-text {
     padding-left: 40px;
 }
@@ -454,7 +460,6 @@ input[type="range"]:active::-webkit-slider-thumb{
     height: 316px;
     width: 100%;
     padding: 0 60px;
-    padding-top: 40px;
 }
 .filters-bar .container {
     padding: 0 !important;
@@ -480,7 +485,7 @@ input[type="range"]:active::-webkit-slider-thumb{
     font-size: 45px;
 }
 .list {
-    margin-top: 200px;
+    margin-top: 80px;
     margin-bottom: 75px;
 }
 .list-item {
@@ -488,9 +493,15 @@ input[type="range"]:active::-webkit-slider-thumb{
     display: flex;
     align-items: center;
     position: relative;
-    padding: 10px 0;
+    padding: 10px 35px;
     margin-bottom: 15px;
     border-radius: 30px;
+}
+.list-item:hover {
+    box-shadow: 0px 0px 5px 0px rgba(29,151,247,0.75);
+-webkit-box-shadow: 0px 0px 5px 0px rgba(29,151,247,0.75);
+-moz-box-shadow: 0px 0px 5px 0px rgba(29,151,247,0.75);
+cursor: pointer;
 }
 .list-item-img {
     width: 380px;
@@ -517,7 +528,19 @@ input[type="range"]:active::-webkit-slider-thumb{
 .list-item-params-wrapper {
     display: flex;
     align-items: center;
-    margin-bottom: 35px !important;
+    margin-bottom: 20px !important;
+    width: fit-content;
+    
+}
+.list-item-params-wrapper p {
+    margin-bottom: 0 !important;
+    padding: 5px 15px;
+    background: #D5D5D5;
+    border-radius: 20px;
+    margin-right: 15px;
+}
+.list-item-params-wrapper p:last-child {
+    margin-right: 0;
 }
 .list-item-param {
     display: flex;
@@ -550,8 +573,8 @@ input[type="range"]:active::-webkit-slider-thumb{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 155px;
-    height: 56px;
+    width: 100px;
+    height: 35px;
     margin-right: 10px;
     color: #fff;
     font-weight: 600;
@@ -565,14 +588,15 @@ input[type="range"]:active::-webkit-slider-thumb{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 155px;
-    height: 56px;
+    width: 100px;
+    height: 35px;
     margin-right: 10px;
     color: #fff;
     font-weight: 600;
     padding: 0;
     user-select: none;
     cursor: auto;
+    font-size: 14px;
 }
 .list-avaiable-btn {
     background: #69BA09;
@@ -580,8 +604,8 @@ input[type="range"]:active::-webkit-slider-thumb{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 155px;
-    height: 56px;
+    width: 100px;
+    height: 35px;
     margin-right: 10px;
     color: #fff;
     font-weight: 600;
@@ -604,15 +628,20 @@ input[type="range"]:active::-webkit-slider-thumb{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 240px;
+    width: 160px;
     height: 56px;
     padding: 0;
     font-weight: 600;
     color: #1D97F7;
     margin-right: 10px;
 }
+.list-block-btn:hover {
+    color: #1D97F7;
+}
 .list-block-btn img {
-    margin-right: 10px;
+    width: 17px;
+    margin-right: 6px;
+    margin-top: -1px;
 }
 .list-item-buttons {
     display: flex;
@@ -644,7 +673,15 @@ input[type="range"]:active::-webkit-slider-thumb{
     margin: 0 auto;
     margin-top: 25px;
 }
-
+.list-item-state {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.list-item-state p {
+    margin-bottom: 0 !important;
+    margin-right: 15px;
+}
 /*Accordion*/
 .questions {
     margin-bottom: 65px;
@@ -759,6 +796,11 @@ input[type="range"]:active::-webkit-slider-thumb{
 /*Form*/
 .under-form-text {
     color: rgba(255, 255, 255, 0.8);
+    margin-top: 25px;
+    font-size: 14px;
+}
+.under-form-text a {
+    color: rgba(255, 255, 255, 0.8);
     text-align: center;
     margin-top: 25px;
     font-size: 14px;
@@ -767,7 +809,7 @@ input[type="range"]:active::-webkit-slider-thumb{
     margin-bottom: 65px;
 }
 .form-wrapper {
-    background: #101010;
+    background: #1D97F7;
     color: #fff;
     border-radius: 25px;
     padding: 60px 0;
@@ -787,7 +829,6 @@ input[type="range"]:active::-webkit-slider-thumb{
 }
 form {
     max-width: 725px;
-    margin: 0 auto;
     margin-top: 30px;
 }
 form input {
@@ -825,7 +866,7 @@ form textarea {
     width: 230px;
     height: 58px;
     border-radius: 30px;
-    background: #1D97F7;
+    background: #69BA09;
     color: #fff;
 }
 .form-btn:hover {
@@ -838,6 +879,18 @@ form textarea {
     position: absolute;
     top: 18px;
     left: 30px;
+}
+.form-about {
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.form-about span {
+    font-size: 14px;
+    color: #0F172A;
+}
+.form-about p {
+    font-size: 20px;
 }
 
 /*Footer*/
@@ -884,6 +937,9 @@ footer .container {
         right: -25px;
         bottom: 0;
         width: 140px;
+    }
+    form {
+        padding-right: 20px;
     }
 }  
 
@@ -942,6 +998,7 @@ footer .container {
         width: 85%;
         margin: 0 auto;
         margin-top: 30px;
+        padding-right: 0;
     }
     input {
         margin-bottom: 1rem;
@@ -954,6 +1011,29 @@ footer .container {
         right: 35px;
         bottom: 0;
         width: 210px;
+    }
+    .full-form-wrapper {
+        flex-direction: column-reverse;
+    }
+    .form-about {
+        width: 85%;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    .under-form-text {
+        width: 85%;
+        margin: 0 auto;
+        margin-top: 25px;
+        text-align: left;
+    }
+    .list-item {
+        flex-direction: column;
+    }
+    .project-changer-item {
+        flex-direction: column;
+    }
+    .list-item {
+        padding: 10px 0;
     }
 }
 @media screen and (max-width: 768px) {
@@ -977,10 +1057,6 @@ footer .container {
     }
     .filters-bar-wrapper {
         padding: 0 30px;
-        padding-top: 40px;
-    }
-    .list-item {
-        flex-direction: column;
     }
     .list-item-text {
         padding-left: 0;
@@ -1057,6 +1133,10 @@ footer .container {
     .project-images-item-selected {
         height: 275px;
     }
+    .list-item-params-wrapper {
+        margin-top: 15px;
+        justify-content: flex-start;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -1129,7 +1209,7 @@ footer .container {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 225px;
+        width: 160px;
         height: 40px;
         margin-right: 10px;
         color: #fff;
@@ -1145,15 +1225,15 @@ footer .container {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 225px;
-        height: 40px;
+        width: 100px;
+    height: 35px;
         margin-right: 10px;
         color: #fff;
         font-weight: 600;
         padding: 0;
 
         font-size: 14px;
-        margin-bottom: 15px;
+        margin-bottom: 0;
     }
     .list-reserved-btn {
         background: #FFCA03;
@@ -1161,8 +1241,8 @@ footer .container {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 225px;
-        height: 40px;
+        width: 100px;
+        height: 35px;
         margin-right: 10px;
         color: #fff;
         font-weight: 600;
@@ -1175,22 +1255,22 @@ footer .container {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 225px;
-        height: 40px;
+        width: 100px;
+    height: 35px;
         margin-right: 10px;
         color: #fff;
         font-weight: 600;
         padding: 0;
 
         font-size: 14px;
-        margin-bottom: 15px;
+        margin-bottom: 0;
     }
     .list-block-btn {
         border-radius: 30px;
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 225px;
+        width: 140px;
         height: 40px;
         margin-right: 10px;
         color: #1D97F7;
@@ -1201,7 +1281,9 @@ footer .container {
         margin-bottom: 15px;
     }
     .list-item-buttons {
-        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
     }
     .questions-wrapper {
         background: #101010;
@@ -1212,4 +1294,8 @@ footer .container {
         padding: 0 20px;
         padding-top: 40px;
     }
+    .list-item-params-wrapper {
+        margin-bottom: 15px !important;
+    }
+
 }
