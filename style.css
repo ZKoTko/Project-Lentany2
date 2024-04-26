@@ -517,7 +517,6 @@ input[type="range"]:active::-webkit-slider-thumb{
 .list-item-params-wrapper {
     display: flex;
     align-items: center;
-    padding-left: 25px;
     margin-bottom: 35px !important;
 }
 .list-item-param {
@@ -762,6 +761,7 @@ input[type="range"]:active::-webkit-slider-thumb{
     color: rgba(255, 255, 255, 0.8);
     text-align: center;
     margin-top: 25px;
+    font-size: 14px;
 }
 .form-section {
     margin-bottom: 65px;
